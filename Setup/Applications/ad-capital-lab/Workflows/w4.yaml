@@ -31,23 +31,12 @@ phases:
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
-    steps:
-    - type: APP_DYNAMICS
-      name: AppDynamics
-      properties:
-        analysisServerConfigId: -RIrnn54QpefCm78Zf1mgw
-        analysisTolerance: LOW
-        applicationId: '8'
-        comparisonStrategy: COMPARE_WITH_PREVIOUS
-        executeWithPreviousSteps: false
-        tierId: '14'
-        timeDuration: 15
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
     stepsInParallel: false
   provisionNodes: false
-  serviceName: ad-capital-lab-portalOnly
+  serviceName: ad-capital-lab
   statefulSet: false
 rollbackPhases:
 - type: KUBERNETES
@@ -70,6 +59,6 @@ rollbackPhases:
     phaseStepNameForRollback: Wrap Up
     stepsInParallel: false
   provisionNodes: false
-  serviceName: ad-capital-lab-portalOnly
+  serviceName: ad-capital-lab
   statefulSet: false
 templatized: false
