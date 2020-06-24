@@ -47,7 +47,7 @@ phases:
     name: Wrap Up
     stepsInParallel: false
   provisionNodes: false
-  serviceName: ad-capital-lab-portalOnly
+  serviceName: ad-capital-lab
   statefulSet: false
 rollbackPhases:
 - type: KUBERNETES
@@ -70,6 +70,6 @@ rollbackPhases:
     phaseStepNameForRollback: Wrap Up
     stepsInParallel: false
   provisionNodes: false
-  serviceName: ad-capital-lab-portalOnly
+  serviceName: ad-capital-lab
   statefulSet: false
 templatized: false
